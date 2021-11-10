@@ -1,0 +1,131 @@
+
+ TESTCASES
+
+
+
+ Requirements for LeTS Attendance screen:
+
+
+  TC NO.         preconditions                                                  scenario  name     description                      action                                             testdata                                  expected results
+                                     
+   TC_001    Attendance screen  should be visible              apply for leave                                    1.selecting the type of issue          valid date formate                            submit successfully
+                                                                                                                                                                2.enter valid date                            entering the reason          
+                                                                                                                                                                3.entering the reason                     
+                                                                                                                                                                4.click on submit
+                                                                                                                                                                
+
+ TC_002     Attendance screen  should be visible               apply for leave                                     1.selecting the type of issue          invalid date formate                         submission failure
+                                                                                                                                                                2.enter valid date                            entering the reason                           error mesage
+                                                                                                                                                                3.entering the reason                     
+                                                                                                                                                                4.click on submit
+                                                                                                                                                               
+ TC_003     Attendance screen  should be visible              apply for leave                                      1.selecting the type of issue           valid date formate                              submission failure
+                                                                                                                                                                2.enter valid date                           not entering the reason                          error mesage
+                                                                                                                                                                3.entering the reason                   
+                                                                                                                                                                4.click on submit
+
+ TC_004     Attendance screen  should be visible             viewing the report                                 1.selecting the type of issue           valid details                                  it will show viewreport page                  
+                                                                                                                                                                2.enter valid date                                                                
+                                                                                                                                                                3.entering the reason                    
+                                                                                                                                                                4.can view report
+
+ TC_005     Attendance screen  should be visible             viewing the report                                 1.selecting the type of issue           invalid details                                 it will ask to enter valid date                
+                                                                                                                                                                2.enter valid date                                                                
+                                                                                                                                                                3.entering the reason                    
+                                                                                                                                                                4.can view report
+              
+TC_006      Attendance screen  should be visible            clearing the page                                   1.selecting clear button                 selecting clear button                          cleared successfully
+
+
+Requirements for issue registration in HR connect:
+
+  TC NO.         preconditions                                            scenario  name               description                      action                                             testdata                                                                         expected results
+
+  TC_001       HR portal should be visible                    HR issue registration                                1.entering project/dep                   valid project/dep                                                                     validation successfull
+                                                                                                                                                              2.selecting locations                     valid no of chars in extension                                                 submit successfully
+                                                                                                                                                              3.entering extensions                    vaild reporting manager with out special characters           
+                                                                                                                                                              4.entering reporting manager
+                                                                                                                                                              5.selecting issue catogory
+                                                                                                                                                              6.selecting issue sub-catogory
+                                                                                                                                                              7.slecting seviority level
+                                                                                                                                                              8.click send
+
+  TC_002       HR portal should be visible                    HR issue registration                                1.entering project/dep                    invalid project/dep                                                                       validation unsuccessfull
+                                                                                                                                                              2.selecting locations                      valid no of chars in extension                                                       submit failure
+                                                                                                                                                              3.entering extensions                     vaild reporting manager with out special characters
+                                                                                                                                                              4.entering reporting manager
+                                                                                                                                                              5.selecting issue catogory
+                                                                                                                                                              6.selecting issue sub-catogory
+                                                                                                                                                              7.slecting seviority level
+                                                                                                                                                              8.click send
+
+ TC_003       HR portal should be visible                    HR issue registration                                 1.entering project/dep                    valid project/dep                                                                       validation unsuccessfull
+                                                                                                                                                              2.selecting locations                      invalid no of chars in extension                                                       submit failure
+                                                                                                                                                              3.entering extensions                     vaild reporting manager with out special characters
+                                                                                                                                                              4.entering reporting manager
+                                                                                                                                                              5.selecting issue catogory
+                                                                                                                                                              6.selecting issue sub-catogory
+                                                                                                                                                              7.slecting seviority level      
+                                                                                                                                                              8.click send
+
+ TC_004       HR portal should be visible                    HR issue registration                                 1.entering project/dep                    valid project/dep                                                                       validation unsuccessfull
+                                                                                                                                                              2.selecting locations                      valid no of chars in extension                                                       submit failure
+                                                                                                                                                              3.entering extensions                     invaild reporting manager with out special characters
+                                                                                                                                                              4.entering reporting manager
+                                                                                                                                                              5.selecting issue catogory
+                                                                                                                                                              6.selecting issue sub-catogory
+                                                                                                                                                              7.slecting seviority level
+                                                                                                                                                              8.click send
+Requirements for request in MRBS:
+
+ TC NO.         preconditions                                                                          scenario  name        description                      action                                             testdata                                             expected results
+
+ TC_001       Meeting room booking system should be visible                   request in MRBS                                1.entering project/group                 valid project/group                                 validation successfull                                  
+                                                                                                                                                                                          2.selecting locations                     valid no of chars in extension                submit successfully
+                                                                                                                                                                                          3.selecting preferred room         in purpose max char length  30      
+                                                                                                                                                                                          4..entering extensions
+                                                                                                                                                                                          4.entering purpose
+                                                                                                                                                                                           5.selecting fecilities
+                                                                                                                                                                                           6.click on submit
+
+ TC_002       Meeting room booking system should be visible                   request in MRBS                                1.entering project/group               invalid project/group                               validation successfull                                  
+                                                                                                                                                                                          2.selecting locations                   valid no of chars in extension                submit unsuccessfully
+                                                                                                                                                                                          3.selecting preferred room          in purpose max char length  30    
+                                                                                                                                                                                          4..entering extensions
+                                                                                                                                                                                          4.entering purpose
+                                                                                                                                                                                           5.selecting fecilities
+                                                                                                                                                                                           6.click on submit
+
+ TC_003       Meeting room booking system should be visible                   request in MRBS                                1.entering project/group               valid project/group                                  validation successfull                                  
+                                                                                                                                                                                          2.selecting locations                   invalid no of chars in extension                submit unsuccessfully
+                                                                                                                                                                                          3.selecting preferred room         in purpose max char length  30        
+                                                                                                                                                                                          4..entering extensions
+                                                                                                                                                                                          4.entering purpose
+                                                                                                                                                                                           5.selecting fecilities
+                                                                                                                                                                                           6.click on submit
+
+ TC_004       Meeting room booking system should be visible                   request in MRBS                                1.entering project/group               valid project/group                               validation successfull                                  
+                                                                                                                                                                                          2.selecting locations                   valid no of chars in extension                submit unsuccessfully
+                                                                                                                                                                                          3.selecting preferred room         in purpose max char length greater        
+                                                                                                                                                                                          4..entering extensions                                                    than 30
+                                                                                                                                                                                          4.entering purpose
+                                                                                                                                                                                           5.selecting fecilities
+                                                                                                                                                                                           6.click on submit
+
+Computing area of a triangle 
+
+ TC NO.         preconditions                                                                 scenario  name        description                      action                                  testdata                                                       expected results
+
+ TC_001       Area of a traingle should be displayed                         area of traingle                                       1.enter a,b,c values              valid a,b,c values                                              the program should give area of a trainagle
+                                                                                                                                                                                                                                sumof 2sides greater than third side      
+            
+TC_002       Area of a traingle should be displayed                         area of traingle                                        1.enter a,b,c values             valid a,b,c values                                              the program should ask to re-enter values
+                                                                                                                                                                                                                                sumof 2sides less than third side                  
+
+TC_003       Area of a traingle should be displayed                         area of traingle                                        1.enter a,b,c values              invalid a,b,c values                                            the program should ask to re-enter values
+                                                                                                                                                                                                                                sumof 2sides greater than third side       
+
+   
+
+
+
